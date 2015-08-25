@@ -5,6 +5,14 @@ def square(x):
     y=x*x
     return y
 
+def power(base,power)
+    ''' This will give you the power of a number '''
+    y = base
+    for (i <= power):
+        y = y*base
+        
+    return y
+
 x = int(input('Give me a number to square: '))
 print(square(x))
 
