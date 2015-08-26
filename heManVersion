@@ -1,0 +1,26 @@
+#version.python2
+#Fun exponent calculator
+#practicing functions
+
+#changed form
+def power(base,power):
+    ''' This will give you the power of a number '''
+    y = base
+    y = y**power 
+    print y
+
+#cheeky call for base and power input
+def get_user():
+    a = int(raw_input('Give me the base, base, base, the buttery biscuit base! '))
+    b = int(raw_input('I have the power of grey skull: '))
+    return power(a, b)
+
+print("This is the Master Chef meets Masters of the universe exponent calculator...\n")
+get_user()
+
+
+#Python notes
+#raw_input() syntax as opposed to input()
+#Think your variables needed an int type declaration
+#python didn't like your 'for (i <= power):'
+#iterating over an int? Better a while loop?
