@@ -1,0 +1,14 @@
+import re
+
+hand = open("mbox-short.txt")
+
+list = list()
+dictionary = {}
+
+for line in hand: 
+    line = line.rstrip()
+    if re.findall('^From ', line):
+        line = line[-13:-11]
+        list.append(line)
+
+print (list)
